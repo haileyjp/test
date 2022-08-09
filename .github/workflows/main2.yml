@@ -11,7 +11,7 @@ jobs:
 
       - name: Login
         run:
-          echo "11"
+          echo ${{ secrets.JIRA_BASE_URL }}
           
 
     
