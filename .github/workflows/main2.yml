@@ -21,6 +21,8 @@ jobs:
       with:
         project: TEST
         issuetype: Story
+        summary: |
+          Build completed for ${{ github.repository }}
 
     - name: Log created issue
       run: echo "Issue ${{ steps.create.outputs.issue }} was created"
