@@ -5,13 +5,13 @@ name: Jira Example
 jobs:
   build:
     runs-on: ubuntu-latest
+    
     name: Jira Example
     steps:
-  
-    - name: Login
-      uses: atlassian/gajira-login@master
-      env:
-        JIRA_BASE_URL: "https://netkiller.atlassian.net"
-        JIRA_API_TOKEN: "pNmqgBaIFggREUvCOali2B90"
+
+      - name: Login
+        run:
+          echo "11"
+          
 
     
