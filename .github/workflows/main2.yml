@@ -8,9 +8,8 @@ jobs:
     name: Jira Example
     environment: production
     steps:
-  
-    - name: Login
-      uses: atlassian/gajira-login@master
+    
+    - name: Jira Login
       env:
         JIRA_BASE_URL: ${{ secrets.JIRA_BASE_URL }}
         JIRA_USER_EMAIL: ${{ secrets.JIRA_USER_EMAIL }}
