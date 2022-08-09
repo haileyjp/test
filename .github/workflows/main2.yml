@@ -11,6 +11,7 @@ jobs:
     - name: Login
       uses: atlassian/gajira-login@master
       env:
-        JIRA_BASE_URL: "11"
+        JIRA_BASE_URL: "https://netkiller.atlassian.net"
+        JIRA_API_TOKEN: "pNmqgBaIFggREUvCOali2B90"
 
     
