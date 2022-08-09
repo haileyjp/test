@@ -1,6 +1,3 @@
-
-
-
 on: push
 
 name: Jira Example
@@ -19,7 +16,7 @@ jobs:
       env:
         JIRA_BASE_URL: https://netkiller.atlassian.net
         JIRA_USER_EMAIL: hailey.park@netkiller.com
-        JIRA_API_TOKEN: https://<yourdomain>.atlassian.net
+        JIRA_API_TOKEN: pNmqgBaIFggREUvCOali2B90
 
     - name: Jira TODO
       uses: atlassian/gajira-todo@master
