@@ -22,7 +22,9 @@ jobs:
         project: TEST
         issuetype: Story
         summary: |
-          Build completed for ${{ github.event.issue.title }}
+          ${{ github.event.issue.title }}
+        description: |
+          ${{ github.event.issue.body }}
 
     - name: Log created issue
       run: echo "Issue ${{ steps.create.outputs.issue }} was created"
