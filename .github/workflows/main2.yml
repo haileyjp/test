@@ -21,7 +21,7 @@ jobs:
       uses: atlassian/gajira-create@master
       with:
         project: TEST
-        issuetype: Build
+        issuetype: Story
         summary: |
           Build completed for ${{ github.repository }}
         description: |
