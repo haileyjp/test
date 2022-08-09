@@ -7,9 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     name: Jira Example
     steps:
-    
-    - name: Jira Login
-      uses: atlassian/gajira-login@v2.0.0
   
     - name: Login
       uses: atlassian/gajira-login@master
