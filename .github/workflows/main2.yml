@@ -8,14 +8,11 @@ jobs:
     name: Jira Example
     environment: production
     steps:
-    
-    - name: Jira Login
+    - name: TEST
       env:
         JIRA_BASE_URL: ${{ secrets.JIRA_BASE_URL }}
         JIRA_USER_EMAIL: ${{ secrets.JIRA_USER_EMAIL }}
         JIRA_API_TOKEN: ${{ secrets.JIRA_API_TOKEN }}
-
-    - name: TEST
       run:
         echo $JIRA_BASE_URL
 
