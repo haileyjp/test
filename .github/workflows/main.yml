@@ -7,8 +7,8 @@ jobs:
     runs-on: ubuntu-latest
     name: Jira Example
     steps:
-  
     - name: TEST
-      run: |
-        example-commend ${{ secrets.JIRA_BASE_URL }}
-        
+      env:
+        JIRA_BASE_URL: ${{ secrets.JIRA_BASE_URL }}
+      run:
+        example-command "$JIRA_BASE_URL"
