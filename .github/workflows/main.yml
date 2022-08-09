@@ -14,9 +14,9 @@ jobs:
     - name: Login
       uses: atlassian/gajira-login@master
       env:
-        JIRA_BASE_URL: "https://netkiller.atlassian.net/"
-        JIRA_USER_EMAIL: "hailey.park@netkiller.com"
-        JIRA_API_TOKEN: "pNmqgBaIFggREUvCOali2B90"
+        JIRA_BASE_URL: ${{ secrets.JIRA_BASE_URL }}
+        JIRA_USER_EMAIL: ${{ secrets.JIRA_USER_EMAIL }}
+        JIRA_API_TOKEN: ${{ secrets.JIRA_API_TOKEN }}
 
     - name: Jira TODO
       uses: atlassian/gajira-todo@master
